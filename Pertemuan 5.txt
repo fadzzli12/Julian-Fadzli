@@ -1,0 +1,12 @@
+Pertemuan 5
+
+Spring Framework
+
+Baru: AppConfig.java, SpringContext.java
+Ditulis ulang jadi bean Spring: StudentDAO.java, AttendanceDAO.java, UserDAO.java (@Repository + SessionFactory inject + @Transactional), AttendanceService.java (@Service).
+Dihapus: HibernateUtil.java (perannya diganti AppConfig; masih ada di git).
+Wiring container: LoginFrame.java, AttendanceGUI.java, Main.java.
+pom.xml — +spring-context, spring-orm, spring-tx 6.1.14.
+lib/ — 27 jar (18 lama + 9 Spring baru).
+nbproject/project.properties — 9 jar Spring masuk javac.classpath.
+build.xml — dipulihkan dari _ant_lama supaya project bisa di-build Ant/NetBeans (bukan Maven-only).
